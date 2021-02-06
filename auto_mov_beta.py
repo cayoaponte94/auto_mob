@@ -13,7 +13,7 @@ def bfs(start_x, start_y, end_x, end_y, n, m, matrix, visited, parent_map):
             return
 
         # Exploration of possibilities (either left, right, top or bottom).
-        for next_x, next_y in ((x + 1, y), (x, y + 1), (x - 1, y + 1), (x, y - 1)):
+        for next_x, next_y in ((x + 1, y), (x, y + 1), (x - 1, y), (x, y - 1)):
             if (0 <= next_x < n and 0 <= next_y < m
                 and matrix[next_x][next_y] != 'X' and not visited[next_x][next_y]):
                 
